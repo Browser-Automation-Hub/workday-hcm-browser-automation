@@ -253,6 +253,38 @@ await withAnchorBrowser(async (page) => {
 
 ---
 
+## Known Selectors Reference
+
+> These CSS selectors were observed in Workday HCM web interfaces. Enterprise applications update their UIs — verify against your specific instance and submit PRs when selectors break.
+
+| Element | Selector | Notes |
+|---------|----------|-------|
+| Login: username | `#okta-signin-username` | Login form |
+| Login: password | `#okta-signin-password` | Login form |
+| Login: next btn | `[data-se="o-form-button-bar"] input` | Login form |
+| Login: mfa code | `input[name="answer"]` | Login form |
+| run report: search input | `[data-automation-id="globalSearchInput"]` | |
+| run report: search result | `[data-automation-id="searchResult"]` | |
+| run report: run btn | `[data-automation-id="wd-CommandButton_uic_okButton"]` | |
+| run report: export btn | `[data-automation-id="wd-CommandButton_uic_exportButton"]` | |
+| run report: download c s v | `[data-automation-id="CSV"]` | |
+| create absence request: absence task | `[data-automation-id*="leaveRequest"]` | |
+| create absence request: absence type | `[data-automation-id="singleSelectDropdown"]` | |
+| create absence request: start date | `[data-automation-id="dateSectionStart-date-input"]` | |
+| create absence request: end date | `[data-automation-id="dateSectionEnd-date-input"]` | |
+| create absence request: submit btn | `[data-automation-id="wd-CommandButton_uic_okButton"]` | |
+| onboard employee: hire task | `[title="Hire Employee"]` | |
+| onboard employee: name input | `[data-automation-id="firstName-input"]` | |
+| onboard employee: dept dropdown | `[data-automation-id*="organization"] [data-automation-id="singleSelectDropdown"]` | |
+| onboard employee: save btn | `[data-automation-id="wd-CommandButton_uic_saveButton"]` | |
+| extract headcount: org chart | `[title="Org Chart"]` | |
+| extract headcount: worker row | `[data-automation-id="tabularViewRow"]` | |
+| extract headcount: export btn | `[data-automation-id="wd-CommandButton_uic_exportButton"]` | |
+
+> ⚠️ Selectors are best-effort. Run `node src/utils.js --verify-selectors` to test against your instance.
+
+---
+
 ## More Browser Automation Projects
 
 This is part of the **[Browser Automation Hub](https://github.com/Browser-Automation-Hub)** — a collection of open-source browser automation scaffolds for systems with poor or no API support:
