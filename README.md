@@ -21,7 +21,7 @@ This system requires **MFA** (Okta / Microsoft MFA). The OSS version provides TO
 ## Quick Start
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/workday-hcm-browser-automation.git
+git clone https://github.com/Browser-Automation-Hub/workday-hcm-browser-automation.git
 cd workday-hcm-browser-automation
 npm install
 cp .env.example .env
