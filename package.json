@@ -1,7 +1,7 @@
 {
-  "name": "workday-hcm-browser-automation",
+  "name": "@browser-automation-hub/workday-hcm-browser-automation",
   "version": "1.0.0",
-  "description": "Browser automation for Workday HCM — automate employee onboarding, run payroll reports, manage time-off requests, and extract workforce data without the Workday API.",
+  "description": "Browser automation for Workday HCM — automate employee onboarding, payroll reports, and workforce data extraction",
   "main": "src/actions.js",
   "scripts": {
     "start": "node examples/basic-login.js",
@@ -16,7 +16,7 @@
     "browser-automation",
     "puppeteer",
     "playwright",
-    "anchorbrowser",
+    "anchor-browser",
     "nodejs"
   ],
   "license": "MIT",
@@ -35,5 +35,8 @@
   "homepage": "https://github.com/Browser-Automation-Hub/workday-hcm-browser-automation#readme",
   "bugs": {
     "url": "https://github.com/Browser-Automation-Hub/workday-hcm-browser-automation/issues"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
